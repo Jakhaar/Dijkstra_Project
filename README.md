@@ -1,2 +1,2 @@
-# Dijkstra_Project YEET KYS
+# Dijkstra_Project
 Repo für unser Java Projekt
