@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class ReadXml {
 
-	public static void main(String[] args) {
+	public static void Read() {
 		
 		Scanner fileScanner = new Scanner(System.in);
 		
@@ -43,7 +43,6 @@ public class ReadXml {
 			System.out.println(e.getMessage());										//Errors
 			
 		}
-		
 		return null;
 	}
 		
