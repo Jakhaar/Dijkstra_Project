@@ -1,12 +1,17 @@
-import org.xml.sax.*;
-import org.w3c.dom.*;
+import org.xml.sax.*;							//read xml
+import org.w3c.dom.*;							//creating docs
 import javax.xml.parsers.*;
+import java.util.Scanner;
 
 public class ReadXml {
 
 	public static void main(String[] args) {
 		
-		Document xmlDocument = ConvertToDocument("./src/small_graph.graphml");	//create doc
+		Scanner fileScanner = new Scanner(System.in);
+		
+		String docName = fileScanner.nextLine();		//./src/small_graph.graphml, ./src/medium_graph.graphml, ./src/large_graph.graphml
+	
+		Document xmlDocument = ConvertToDocument(docName);	//create doc
 		
 		NodeList listOfNodes = xmlDocument.getElementsByTagName("node");	//list of nodes
 		
