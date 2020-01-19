@@ -1,44 +1,38 @@
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
-import java.util.Scanner;	
+import java.util.Scanner;
 
 public class Main {
-
+	
 	public static void main(String[] args) {
-		
-																			//./src/small_graph.graphml, ./src/medium_graph.graphml, ./src/large_graph.graphml
-		Document xmlDocument = ReadXml.ConvertToDocument(ReadXml.scan());	//create doc
+		/* User Input for the Document Path 
+		* For example: 
+		* ./graph/small_graph.graphml
+		* ./graph/medium_graph.graphml 
+		* ./graph/large_graph.graphml
+		*/
+		int startNode, amountOfNodes, amountOfEdges;
+		Document xmlDocument = ReadXml.ConvertToDocument(ReadXml.scanner());
 		
 		NodeList listOfNodes = xmlDocument.getElementsByTagName("node");	//list of nodes
+		NodeList listOfEdges = xmlDocument.getElementsByTagName("edge");	//list of edges		
 		
-		NodeList listOfEdges = xmlDocument.getElementsByTagName("edge");	//list of edges
+		amountOfNodes = listOfNodes.getLength();
+		amountOfEdges = listOfEdges.getLength();
 		
-		int numbOfNodes = listOfNodes.getLength();
-		int numbOfEdges = listOfEdges.getLength();
-		
-		System.out.println("Number of nodes " + numbOfNodes +
-				"\nNumber of edges " + numbOfEdges);
+		System.out.println("Number of nodes " + amountOfNodes + "\nNumber of edges " + amountOfEdges);
 			
-		
-		EdgeGraph edge[] = initializeObjectEdges(listOfEdges, numbOfEdges);
-		
-		NodeGraph nodes[] = initializeOjectNodes(numbOfNodes);
-	
-		int startNode = 3;										//askStartNode();
+		EdgeGraph edge[] = initializeObjectEdges(listOfEdges, amountOfEdges);
+		NodeGraph nodes[] = initializeObjectNodes(amountOfNodes);
+
+		startNode = askStartNode(amountOfNodes);
+
 		nodes[startNode].setWeight(0);
 		nodes[startNode].setPreNode(null);
-		nodes[startNode].setReachable(true);
-		
-		dijkstra(nodes, edge, numbOfNodes, numbOfEdges);
-		
-		giveOutSoltion(nodes, numbOfNodes, startNode);
-		
-		
-		
-		
-		
+		nodes[startNode].setReachable(true);			
+		dijkstra(nodes, edge, amountOfNodes, amountOfEdges);
+		giveOutSoltion(nodes, amountOfNodes, startNode);		
 	}
-	
 	
 	private static EdgeGraph[] initializeObjectEdges(NodeList listOfEdges, int numbOfEdges) {
 		
@@ -51,7 +45,7 @@ public class Main {
 		return edge;
 	}
 	
-	private static NodeGraph[] initializeOjectNodes(int numbOfNodes) {
+	private static NodeGraph[] initializeObjectNodes(int numbOfNodes) {
 		
 		NodeGraph nodes[] = new NodeGraph[numbOfNodes];
 		for (int i = 0; i < numbOfNodes; i++) {
@@ -107,13 +101,24 @@ public class Main {
 		}
 	}
 	
-	public static int askStartNode() {								//funktioniert warum auch immer nicht
-		Scanner scanNode = new Scanner(System.in);
-		String startNode = scanNode.nextLine();
-		scanNode.close();
-		startNode = startNode.replace("n", "");
-		int startInt = Integer.parseInt(startNode);
-		return startInt;
+	public static int askStartNode(int amountOfNodes) {
+		Scanner sc = new Scanner(System.in);
+		int startingNode;
+		
+		System.out.println("Bitte Geben Sie den Start Node ein: ");
+		if (sc.hasNextLine()){
+			do {
+				startingNode = sc.nextInt();
+				if (startingNode < 0 || startingNode > (amountOfNodes-1))
+					System.out.println("\n<!--Die Eingegebene Zahl ist leider nicht gueltig.-->\nBitte Geben Sie eine Zahl zwischen 0-" + (amountOfNodes-1) + " ein: ");
+				else break;	
+			} while (true);
+		}
+		else startingNode = 1;
+	
+		sc.close();
+
+		return startingNode;
 		
 	}
 
@@ -133,9 +138,7 @@ public class Main {
 					
 				}
 			}
-		}
-	
+		}	
 		return keyId;
 	}
-
 }
