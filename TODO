@@ -1,0 +1,45 @@
+Project:
+    TODO:   Check for Performance issues
+
+    TODO:   Minimize as much code as Possible
+
+    TODO:   Output the results of the processing into the specified file(s)
+            and/or the user interface (command line interface (CLI) or graphical user interface (GUI)).
+
+    TODO:   It is possible to start the program from the CLI or GUI and provide an input file
+            for processing using the following or similar interface:
+            $ > java myJavaProgram inputfile.graphml
+
+    TODO:   The vertex(nodes) names or IDs should be Displayed
+
+    TODO:   The edge names or IDs should be Displayed
+
+    TODO:   Connectivity, i.e., whether the the graph is connected
+
+    TODO:   Diameter of the graph, i.e., the maximum distance between any two nodes
+            considering the shortest path between them
+    
+    TODO:   The shortest path between two vertices according to the Dijkstra algorithm,
+            where both vertices can be provided on the command line using the following
+            or similar interface:
+            $ > java myJavaProgram inputfile.graphml -s 1 16
+            
+            <!--where the -s switch starts the shortest path calculation of the program with
+            1 and 16 being the IDs of the vertices as parameters for the switch.-->
+    
+    TODO:   At least two Threads should be implemented(Main is already one)
+
+    TODO:   Implement an abstract class and an interface
+
+
+
+Main:
+    TODO:   Output for every Edge <Done>
+
+    TODO:   User should not be able to enter a Number thats bigger than the amount of Nodes <Done>
+
+    FIXME:  askStartNode() doesnt work   <Done>
+
+    FIXME:  Let the User Input the Path  <Done>
+
+

@@ -14,8 +14,8 @@ public class Main {
 		int startNode, amountOfNodes, amountOfEdges;
 		Document xmlDocument = ReadXml.ConvertToDocument(ReadXml.scanner());
 		
-		NodeList listOfNodes = xmlDocument.getElementsByTagName("node");	//list of nodes
-		NodeList listOfEdges = xmlDocument.getElementsByTagName("edge");	//list of edges		
+		NodeList listOfNodes = xmlDocument.getElementsByTagName("node");
+		NodeList listOfEdges = xmlDocument.getElementsByTagName("edge");		
 		
 		amountOfNodes = listOfNodes.getLength();
 		amountOfEdges = listOfEdges.getLength();
@@ -96,7 +96,11 @@ public class Main {
 	
 	private static void giveOutSoltion(NodeGraph nodes[], int numbOfNodes, int startNode) {
 		for (int i = 0; i < numbOfNodes; i++) {
-			System.out.println("Shortest path from Node " + nodes[startNode].getNodeId() + " to Node " + 
+			if (nodes[i].getWeight() == 0) {
+				System.out.println("The shortest path from Node " + nodes[startNode].getNodeId() + " to Node itself has the weight of: 0");
+				continue;	
+			}
+			System.out.println("The shortest path from Node " + nodes[startNode].getNodeId() + " to Node " + 
 								nodes[i].getNodeId() + " has the weight of: " + nodes[i].getWeight());
 		}
 	}
