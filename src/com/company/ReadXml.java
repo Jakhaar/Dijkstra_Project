@@ -1,3 +1,5 @@
+package com.company;
+
 import org.xml.sax.*;							//read xml
 import org.w3c.dom.Document;
 import org.w3c.dom.*;							//creating docs
@@ -5,24 +7,27 @@ import javax.xml.parsers.*;						//parses doc
 import java.util.Scanner;						//scanner
 
 public class ReadXml {
-
+	//Global Scanner
+	final static Scanner scanner = new Scanner(System.in);
+	private static String fileSource;
+	
 	public static String scanner() {
+		Boolean isValidSrc;
 		
-		Scanner scanner = new Scanner(System.in);
-		String fileSource;
-		boolean isValidSrc = false;
-
-		System.out.println("Bitte geben Sie den Pfad ihrer datei ein: ");
-		
-		//Testing the Input before returning it
+		//Testing the Input
 		//Avoiding NullPointerExceptions
 		do {
 			fileSource = scanner.nextLine();
-			if(ReadXml.ConvertToDocument(fileSource) != null)isValidSrc = true;
-			else System.out.println("\n<!--Der Eingegebene Pfad ist leider Falsch.-->\nBitte Geben Sie einen gueltigen Pfad ein (z.B. ..\\graph\\medium_graph.graphml): ");
+			isValidSrc = fileSourceCheck(fileSource);
 		} while (isValidSrc == false);
 
 		return fileSource;	
+	}
+
+	protected static Boolean fileSourceCheck(String fileSource){
+		if(ReadXml.ConvertToDocument(fileSource) != null) return true;
+		else System.out.print("\n<!--The entered path or file name is wrong.-->\nPlease enter correct your input (z.B. ..\\graph\\medium_graph.graphml or medium_graph.graphml): ");
+		return false;
 	}
 
 	public static Document ConvertToDocument(String docString) {

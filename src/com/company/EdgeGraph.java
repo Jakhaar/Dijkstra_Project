@@ -1,3 +1,5 @@
+package com.company;
+
 public class EdgeGraph {
 	
 	private int sourceId;
