@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a46129d-b214-4e7d-ab71-94b27d9f58fe" name="Default Changelist" comment="" />
+    <list default="true" id="4a46129d-b214-4e7d-ab71-94b27d9f58fe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/CalculatingOfNodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/CalculatingOfNodes.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1X7tpCLXWjauFE64FKfHogW88xL" />
   <component name="ProjectViewState">
@@ -14,8 +22,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -25,7 +36,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
-  <component name="RunManager" selected="Application.Main_fileName_startpoint">
+  <component name="RunManager" selected="Application.Main_fileName">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="Dijkstra" />
@@ -46,7 +57,7 @@
     <configuration name="Main_fileName_startpoint" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="Dijkstra" />
-      <option name="PROGRAM_PARAMETERS" value="test_graph.graphml -s 0 8" />
+      <option name="PROGRAM_PARAMETERS" value="test_graph.graphml -s 1 2" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -86,6 +97,8 @@
       <updated>1580409140389</updated>
       <workItem from="1580409141946" duration="11197000" />
       <workItem from="1580558683304" duration="5776000" />
+      <workItem from="1580818835871" duration="702000" />
+      <workItem from="1580824209705" duration="668000" />
     </task>
     <servers />
   </component>
@@ -93,33 +106,43 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="487" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580563742689">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="380" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580824686708">
+      <screen x="0" y="0" width="1500" height="960" />
     </state>
+    <state x="380" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1500.960@0.0.1500.960" timestamp="1580824686708" />
     <state x="487" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1580563742689" />
+    <state x="600" y="369" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580824221609">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="600" y="369" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1500.960@0.0.1500.960" timestamp="1580824221609" />
     <state x="718" y="390" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1580414130693">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="718" y="390" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1580414130693" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1580564034999">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1458" height="256" key="GridCell.Tab.0.bottom" timestamp="1580824878238">
+      <screen x="0" y="0" width="1500" height="960" />
     </state>
+    <state width="1458" height="256" key="GridCell.Tab.0.bottom/0.0.1500.960@0.0.1500.960" timestamp="1580824878238" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1580564034999" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1580564034999">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1458" height="256" key="GridCell.Tab.0.center" timestamp="1580824878238">
+      <screen x="0" y="0" width="1500" height="960" />
     </state>
+    <state width="1458" height="256" key="GridCell.Tab.0.center/0.0.1500.960@0.0.1500.960" timestamp="1580824878238" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1580564034999" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1580564034999">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1458" height="256" key="GridCell.Tab.0.left" timestamp="1580824878237">
+      <screen x="0" y="0" width="1500" height="960" />
     </state>
+    <state width="1458" height="256" key="GridCell.Tab.0.left/0.0.1500.960@0.0.1500.960" timestamp="1580824878237" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1580564034999" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1580564034999">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1458" height="256" key="GridCell.Tab.0.right" timestamp="1580824878238">
+      <screen x="0" y="0" width="1500" height="960" />
     </state>
+    <state width="1458" height="256" key="GridCell.Tab.0.right/0.0.1500.960@0.0.1500.960" timestamp="1580824878238" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1580564034999" />
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1580558679362">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="513" y="317" key="com.intellij.ide.util.TipDialog" timestamp="1580824211374">
+      <screen x="0" y="0" width="1500" height="960" />
     </state>
+    <state x="513" y="317" key="com.intellij.ide.util.TipDialog/0.0.1500.960@0.0.1500.960" timestamp="1580824211374" />
     <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1580558679362" />
   </component>
 </project>

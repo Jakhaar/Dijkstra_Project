@@ -1,0 +1,80 @@
+
+Calculation for Node: 0
+The shortest path from Node 0 to Node 0 has the weight of: 0
+The shortest path from Node 0 to Node 1 has the weight of: 2
+The shortest path from Node 0 to Node 2 has the weight of: 4
+The shortest path from Node 0 to Node 3 has the weight of: 4
+The shortest path from Node 0 to Node 4 has the weight of: 6
+The shortest path from Node 0 to Node 5 has the weight of: 1
+The shortest path from Node 0 to Node 6 has the weight of: 5
+The shortest path from Node 0 to Node 7 has the weight of: 5
+
+Calculation for Node: 1
+The shortest path from Node 1 to Node 0 has the weight of: 2
+The shortest path from Node 1 to Node 1 has the weight of: 0
+The shortest path from Node 1 to Node 2 has the weight of: 2
+The shortest path from Node 1 to Node 3 has the weight of: 2
+The shortest path from Node 1 to Node 4 has the weight of: 4
+The shortest path from Node 1 to Node 5 has the weight of: 3
+The shortest path from Node 1 to Node 6 has the weight of: 7
+The shortest path from Node 1 to Node 7 has the weight of: 3
+
+Calculation for Node: 2
+The shortest path from Node 2 to Node 0 has the weight of: 4
+The shortest path from Node 2 to Node 1 has the weight of: 2
+The shortest path from Node 2 to Node 2 has the weight of: 0
+The shortest path from Node 2 to Node 3 has the weight of: 4
+The shortest path from Node 2 to Node 4 has the weight of: 3
+The shortest path from Node 2 to Node 5 has the weight of: 5
+The shortest path from Node 2 to Node 6 has the weight of: 7
+The shortest path from Node 2 to Node 7 has the weight of: 1
+
+Calculation for Node: 3
+The shortest path from Node 3 to Node 0 has the weight of: 4
+The shortest path from Node 3 to Node 1 has the weight of: 2
+The shortest path from Node 3 to Node 2 has the weight of: 4
+The shortest path from Node 3 to Node 3 has the weight of: 0
+The shortest path from Node 3 to Node 4 has the weight of: 4
+The shortest path from Node 3 to Node 5 has the weight of: 3
+The shortest path from Node 3 to Node 6 has the weight of: 7
+The shortest path from Node 3 to Node 7 has the weight of: 5
+
+Calculation for Node: 4
+The shortest path from Node 4 to Node 0 has the weight of: 6
+The shortest path from Node 4 to Node 1 has the weight of: 4
+The shortest path from Node 4 to Node 2 has the weight of: 3
+The shortest path from Node 4 to Node 3 has the weight of: 4
+The shortest path from Node 4 to Node 4 has the weight of: 0
+The shortest path from Node 4 to Node 5 has the weight of: 7
+The shortest path from Node 4 to Node 6 has the weight of: 6
+The shortest path from Node 4 to Node 7 has the weight of: 4
+
+Calculation for Node: 5
+The shortest path from Node 5 to Node 0 has the weight of: 1
+The shortest path from Node 5 to Node 1 has the weight of: 3
+The shortest path from Node 5 to Node 2 has the weight of: 5
+The shortest path from Node 5 to Node 3 has the weight of: 3
+The shortest path from Node 5 to Node 4 has the weight of: 7
+The shortest path from Node 5 to Node 5 has the weight of: 0
+The shortest path from Node 5 to Node 6 has the weight of: 4
+The shortest path from Node 5 to Node 7 has the weight of: 6
+
+Calculation for Node: 6
+The shortest path from Node 6 to Node 0 has the weight of: 5
+The shortest path from Node 6 to Node 1 has the weight of: 7
+The shortest path from Node 6 to Node 2 has the weight of: 7
+The shortest path from Node 6 to Node 3 has the weight of: 7
+The shortest path from Node 6 to Node 4 has the weight of: 6
+The shortest path from Node 6 to Node 5 has the weight of: 4
+The shortest path from Node 6 to Node 6 has the weight of: 0
+The shortest path from Node 6 to Node 7 has the weight of: 6
+
+Calculation for Node: 7
+The shortest path from Node 7 to Node 0 has the weight of: 5
+The shortest path from Node 7 to Node 1 has the weight of: 3
+The shortest path from Node 7 to Node 2 has the weight of: 1
+The shortest path from Node 7 to Node 3 has the weight of: 5
+The shortest path from Node 7 to Node 4 has the weight of: 4
+The shortest path from Node 7 to Node 5 has the weight of: 6
+The shortest path from Node 7 to Node 6 has the weight of: 6
+The shortest path from Node 7 to Node 7 has the weight of: 0
