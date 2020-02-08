@@ -10,12 +10,13 @@ public class ReadXml {
 	//Global Scanner
 	final static Scanner scanner = new Scanner(System.in);
 	private static String fileSource;
-	
+
 	public static String scanner() {
 		Boolean isValidSrc;
 		
 		//Testing the Input
 		//Avoiding NullPointerExceptions
+		System.out.print("Please enter the file name or the path of your file: ");
 		do {
 			fileSource = scanner.nextLine();
 			isValidSrc = fileSourceCheck(fileSource);
