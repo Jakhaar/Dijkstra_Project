@@ -6,10 +6,10 @@ public class EdgeGraph {
 	private int targetId;
 	private int weight;
 	
-	public EdgeGraph(int targedId, int sourceId, int weight) {
+	public EdgeGraph(int targetId, int sourceId, int weight) {
 		
 		this.sourceId = sourceId;
-		this.targetId = targedId;
+		this.targetId = targetId;
 		this.weight = weight;
 	}
 

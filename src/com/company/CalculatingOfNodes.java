@@ -2,8 +2,30 @@ package com.company;
 
 import java.util.List;
 
-public class CalculatingOfNodes{
+public class CalculatingOfNodes extends Thread{
 
+	private static List<NodeGraph> nodes;
+	private static int amountOfNodes;
+	private static int amountOfEdges;
+	private static int nodeForCalculation;
+	private static List<EdgeGraph> edges;
+
+	public static void setData(List<NodeGraph> listOfNodes, List<EdgeGraph> listOfEdges, int firstValue, int secondValue, int thirdValue){
+		edges = listOfEdges;
+		nodes = listOfNodes;
+		amountOfNodes = firstValue;
+		amountOfEdges = secondValue;
+		nodeForCalculation = thirdValue;
+	}
+
+	@Override
+	public void run() {
+		try{
+			dijkstra(nodes, edges, amountOfNodes, amountOfEdges, nodeForCalculation);
+		}catch(Exception e){
+			System.out.println("An Error Occurred");
+		}
+	}
 
 	protected static void dijkstra(List<NodeGraph> nodes, List<EdgeGraph> edge, Integer numbOfNodes, Integer numbOfEdges, Integer nodeForCalculation) {
 		nodes.get(nodeForCalculation).setWeight(0);

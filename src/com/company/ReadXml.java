@@ -9,25 +9,34 @@ import java.util.Scanner;						//scanner
 public class ReadXml {
 	//Global Scanner
 	final static Scanner scanner = new Scanner(System.in);
-	private static String fileSource;
+
 
 	public static String scanner() {
-		Boolean isValidSrc;
+		String fileSource;
+
+		boolean isValidSrc;
 		
 		//Testing the Input
 		//Avoiding NullPointerExceptions
 		System.out.print("Please enter the file name or the path of your file: ");
+
 		do {
+
 			fileSource = scanner.nextLine();
+
 			isValidSrc = fileSourceCheck(fileSource);
-		} while (isValidSrc == false);
+
+		} while (!isValidSrc);
 
 		return fileSource;	
 	}
 
 	protected static Boolean fileSourceCheck(String fileSource){
+
 		if(ReadXml.ConvertToDocument(fileSource) != null) return true;
+
 		else System.out.print("\n<!--The entered path or file name is wrong.-->\nPlease enter correct your input (z.B. ..\\graph\\medium_graph.graphml or medium_graph.graphml): ");
+
 		return false;
 	}
 
@@ -50,7 +59,8 @@ public class ReadXml {
 	}
 	
 	public static int target(NodeList listOfEdges, int i) {
-		
+		int targetId;
+
 		try {
 			
 				Node edgeNode =  listOfEdges.item(i);							
@@ -61,7 +71,7 @@ public class ReadXml {
 				
 				target = target.replace("n", "");
 				
-				int targetId = Integer.parseInt(target);
+				targetId = Integer.parseInt(target);
 			
 				return targetId;
 			
@@ -75,7 +85,8 @@ public class ReadXml {
 	}
 	
 	public static int source(NodeList listOfEdges, int i) {
-		
+		int sourceId;
+
 		try {
 			
 			Node edgeNode =  listOfEdges.item(i);							
@@ -86,7 +97,7 @@ public class ReadXml {
 			
 			source = source.replace("n", "");
 			
-			int sourceId = Integer.parseInt(source);
+			sourceId = Integer.parseInt(source);
 		
 			return sourceId;
 		
@@ -100,6 +111,8 @@ public class ReadXml {
 	}
 	
 	public static int weight(NodeList listOfEdges, int i) {
+		int weight;
+
 		try {
 			
 			Node edgeNode =  listOfEdges.item(i);							
@@ -114,7 +127,7 @@ public class ReadXml {
 			
 			String weightString = weightElement.getFirstChild().getNodeValue();
 			
-			int weight = Integer.parseInt(weightString);
+			weight = Integer.parseInt(weightString);
 		
 			return weight;
 		
